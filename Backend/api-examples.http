@@ -1,0 +1,97 @@
+# Ejemplos de Peticiones HTTP para SubTracker API
+
+## Variables
+@baseUrl = http://localhost:3000
+
+### Health Check
+GET {{baseUrl}}/health
+
+###
+
+### Obtener todas las suscripciones
+GET {{baseUrl}}/api/subscriptions
+
+###
+
+### Crear suscripción - Netflix (USD Mensual)
+POST {{baseUrl}}/api/subscriptions
+Content-Type: application/json
+
+{
+  "name": "Netflix",
+  "price": 15.99,
+  "currency": "USD",
+  "frequency": "MONTHLY",
+  "paymentDate": 15
+}
+
+###
+
+### Crear suscripción - Spotify (USD Mensual)
+POST {{baseUrl}}/api/subscriptions
+Content-Type: application/json
+
+{
+  "name": "Spotify",
+  "price": 9.99,
+  "currency": "USD",
+  "frequency": "MONTHLY",
+  "paymentDate": 1
+}
+
+###
+
+### Crear suscripción - Gimnasio (HNL Mensual)
+POST {{baseUrl}}/api/subscriptions
+Content-Type: application/json
+
+{
+  "name": "Gimnasio",
+  "price": 800,
+  "currency": "HNL",
+  "frequency": "MONTHLY",
+  "paymentDate": 10
+}
+
+###
+
+### Crear suscripción - Adobe Creative Cloud (USD Anual)
+POST {{baseUrl}}/api/subscriptions
+Content-Type: application/json
+
+{
+  "name": "Adobe Creative Cloud",
+  "price": 599.88,
+  "currency": "USD",
+  "frequency": "ANNUAL",
+  "paymentDate": 20
+}
+
+###
+
+### Obtener una suscripción por ID
+# Reemplaza {id} con un ID real
+GET {{baseUrl}}/api/subscriptions/{id}
+edcddc0c-bedc-4350-82f0-b09933fa253d
+###
+
+### Actualizar suscripción
+# Reemplaza {id} con un ID real
+PUT {{baseUrl}}/api/subscriptions/{id}
+Content-Type: application/json
+
+{
+  "price": 17.99,
+  "paymentDate": 20
+}
+
+###
+
+### Eliminar suscripción
+# Reemplaza {id} con un ID real
+DELETE {{baseUrl}}/api/subscriptions/{id}
+
+###
+
+### Obtener totales calculados
+GET {{baseUrl}}/api/subscriptions/totals

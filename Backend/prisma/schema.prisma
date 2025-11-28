@@ -1,0 +1,22 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Subscription {
+  id          String   @id @default(uuid())
+  name        String
+  price       Float
+  currency    String   // USD or HNL
+  frequency   String   // MONTHLY or ANNUAL
+  paymentDate Int?     // Día del mes (1-31)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
