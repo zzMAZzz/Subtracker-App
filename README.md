@@ -11,7 +11,7 @@ SubTracker te ayuda a visualizar y controlar cuánto dinero gastas mensualmente 
 - **Backend**: Node.js + Express + Prisma + SQLite
 - **Frontend**: Vue 3 + TypeScript + Vite + Tailwind CSS
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 Subtracker-App/
