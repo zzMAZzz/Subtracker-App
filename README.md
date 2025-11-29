@@ -3,7 +3,7 @@
 Aplicación completa de gestión de finanzas personales para rastrear gastos recurrentes (suscripciones).
 
 ## Desarrollado por:
-- Maria Fernanda Funez Ordońez
+- Maria Fernanda Funez Ordoñez
 - Miguel Angel Zelaya Flores
 
 ## Descripción
