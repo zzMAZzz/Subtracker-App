@@ -2,6 +2,10 @@
 
 Aplicación completa de gestión de finanzas personales para rastrear gastos recurrentes (suscripciones).
 
+## Desarrollado por:
+- Maria Fernanda Funez Ordońez
+- Miguel Angel Zelaya Flores
+
 ## Descripción
 
 SubTracker te ayuda a visualizar y controlar cuánto dinero gastas mensualmente en servicios como streaming, gimnasio, software y otras suscripciones. La aplicación calcula automáticamente tus gastos mensuales considerando diferentes monedas y frecuencias de pago.
